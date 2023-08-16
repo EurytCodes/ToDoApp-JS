@@ -1,0 +1,95 @@
+*{
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+
+body{
+    height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background: url(img/133.jpg) no-repeat center center/cover;
+}
+
+#add-task-container{
+    width: 350px;
+    background-color: white;
+    padding: 20px 15px;
+    border-radius: 10px;
+    display: flex;
+    margin-bottom: 20px;
+}
+
+input{
+    flex: 5;
+    margin-right: 5px;
+    font-size: 18px;
+    padding: 8px 20px;
+    border-radius: 50px;
+    outline: none;
+    border: none;
+    background-color: gainsboro;
+}
+
+#add-task{
+    flex: 1;
+    width: 50px;
+    height: 50px;
+    border-radius: 50px;
+    background-color: white;
+    font-size: 25px;
+    color: green;
+    border: 2px solid green;
+    transition: .3s;
+}
+#add-task:hover{
+    background-color: green;
+    color: white;
+}
+
+.task{
+    width: 100%;
+    background-color: white;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    border-radius: 10px;
+    box-shadow: 0 0 3px;
+    margin-bottom: 10px;
+    padding: 15px 10px;
+}
+.task li{
+    list-style-type: none;
+    flex: 5;
+    font-size: 20px;
+}
+.task button{
+    flex: 1;
+}
+.checkBtn{
+    border: 2px solid orange;
+    border-radius: 5px;
+    color: orange;
+    background-color: white;
+    font-size: 20px;
+    margin-right: 5px;
+    transition: .3s;
+}
+.checkBtn:hover{
+    background-color: orange;
+    color: white;
+}
+.deleteBtn{
+    border: 2px solid red;
+    border-radius: 5px;
+    color: red;
+    background-color: white;
+    font-size: 23px;
+    margin-right: 5px;
+    transition: .3s;
+}
+.deleteBtn:hover{
+    background-color: red;
+    color: white;
+}
